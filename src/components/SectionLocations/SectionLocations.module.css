@@ -94,3 +94,23 @@
 .locationName {
   color: var(--marketplaceColor);
 }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+  }
+}
+
+.step {
+  @media (--viewportMedium) {
+    width: 324px;
+    margin-right: 40px;
+  }
+}
+
+.stepTitle:before {
+  content: '✓';
+}

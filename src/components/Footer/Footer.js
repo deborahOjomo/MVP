@@ -12,6 +12,7 @@ import {
   ExternalLink,
   NamedLink,
 } from '../../components';
+import FooterImage from './Footer';
 
 import css from './Footer.module.css';
 
@@ -136,30 +137,7 @@ const Footer = props => {
                     <FormattedMessage id="Footer.searchLosAngeles" />
                   </NamedLink>
                 </li>
-                <li className={css.listItem}>
-                  <NamedLink
-                    name="SearchPage"
-                    to={{
-                      search:
-                        '?address=San%20Francisco%2C%20California%2C%20USA&bounds=37.8324430069081%2C-122.354995082683%2C37.6044780500533%2C-122.517910874663',
-                    }}
-                    className={css.link}
-                  >
-                    <FormattedMessage id="Footer.searchSanFrancisco" />
-                  </NamedLink>
-                </li>
-                <li className={css.listItem}>
-                  <NamedLink
-                    name="SearchPage"
-                    to={{
-                      search:
-                        '?address=Seattle%2C%20Washington%2C%20USA&bounds=47.7779392908564%2C-122.216605992108%2C47.3403950185547%2C-122.441233019046',
-                    }}
-                    className={css.link}
-                  >
-                    <FormattedMessage id="Footer.searchSeattle" />
-                  </NamedLink>
-                </li>
+               
                 <li className={css.listItem}>
                   <NamedLink
                     name="SearchPage"
