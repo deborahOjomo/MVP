@@ -92,8 +92,8 @@ export const filters = [
     config: {},
   },
   {
-    id: 'yogaStyles',
-    label: 'Yoga styles',
+    id: 'MusicGenre',
+    label: 'Music Genre',
     type: 'SelectMultipleFilter',
     group: 'secondary',
     queryParamNames: ['pub_yogaStyles'],
@@ -107,18 +107,18 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'ashtanga', label: 'Ashtanga' },
-        { key: 'hatha', label: 'Hatha' },
-        { key: 'kundalini', label: 'Kundalini' },
-        { key: 'restorative', label: 'Restorative' },
-        { key: 'vinyasa', label: 'Vinyasa' },
-        { key: 'yin', label: 'Yin' },
+        { key: 'afrobeats', label: 'Afrobeats' },
+        { key: 'dancehall', label: 'Dancehall' },
+        { key: 'hiphop', label: 'HipHop' },
+        { key: 'pop', label: 'Pop' },
+        { key: 'amapiano', label: 'Amapiano' },
+        { key: 'dubstep', label: 'Dubstep' },
       ],
     },
   },
   {
-    id: 'certificate',
-    label: 'Certificate',
+    id: 'eventType',
+    label: 'Event Type',
     type: 'SelectSingleFilter',
     group: 'secondary',
     queryParamNames: ['pub_certificate'],
@@ -128,9 +128,10 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true },
-        { key: '200h', label: 'Registered yoga teacher 200h' },
-        { key: '500h', label: 'Registered yoga teacher 500h' },
+        { key: 'birthday', label: 'Birthday Party' },
+        { key: 'gardenParty', label: 'Garden party' },
+        { key: 'gardenParty', label: 'Garden party' },
+        { key: 'gardenParty', label: 'Garden party' },
       ],
     },
   },
