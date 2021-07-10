@@ -41,6 +41,8 @@ describe('Application - node environment', () => {
       '/u/1234': 'ProfilePage.schemaTitle',
       '/login': 'AuthenticationPage.schemaTitleLogin',
       '/signup': 'AuthenticationPage.schemaTitleSignup',
+      '/login': 'DJAuthenticationPage.schemaTitleLogin',
+      '/signup': 'DJAuthenticationPage.schemaTitleSignup',
       '/recover-password': 'PasswordRecoveryPage.title',
       '/this-url-should-not-be-found': 'NotFoundPage.title',
       '/reset-password?t=token&e=email': 'PasswordResetPage.title',

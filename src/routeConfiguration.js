@@ -4,6 +4,7 @@ import {
   AuthenticationPage,
   CheckoutPage,
   ContactDetailsPage,
+  DJAuthenticationPage,
   EditListingPage,
   EmailVerificationPage,
   InboxPage,
@@ -173,6 +174,16 @@ const routeConfiguration = () => {
       path: '/signup',
       name: 'SignupPage',
       component: props => <AuthenticationPage {...props} tab="signup" />,
+    },
+    {
+      path: '/login',
+      name: 'LoginPage',
+      component: props => <DJAuthenticationPage {...props} tab="login" />,
+    },
+    {
+      path: '/djsignup',
+      name: 'DJSignupPage',
+      component: props => <DJAuthenticationPage {...props} tab="djSignUp" />,
     },
     {
       path: '/recover-password',
