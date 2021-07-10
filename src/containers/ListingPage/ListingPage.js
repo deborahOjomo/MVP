@@ -382,7 +382,7 @@ export class ListingPageComponent extends Component {
       </NamedLink>
     );
 
-    const yogaStylesOptions = findOptionsForSelectFilter('yogaStyles', filterConfig);
+    const musicGenresOptions = findOptionsForSelectFilter('musicGenres', filterConfig);
     const certificateOptions = findOptionsForSelectFilter('certificate', filterConfig);
 
     return (
@@ -435,7 +435,7 @@ export class ListingPageComponent extends Component {
                     onContactUser={this.onContactUser}
                   />
                   <SectionDescriptionMaybe description={description} />
-                  <SectionFeaturesMaybe options={yogaStylesOptions} publicData={publicData} />
+                  <SectionFeaturesMaybe options={musicGenresOptions} publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
                     publicData={publicData}

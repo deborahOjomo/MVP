@@ -42,11 +42,11 @@ const filterConfig = [
     },
   },
   {
-    id: 'yogaStyles',
-    label: 'yogaStyles',
+    id: 'musicGenres',
+    label: 'musicGenres',
     type: 'SelectMultipleFilter',
     group: 'secondary',
-    queryParamName: 'pub_yogaStyles',
+    queryParamName: 'pub_musicGenres',
     config: {
       mode: 'has_all',
       options: [

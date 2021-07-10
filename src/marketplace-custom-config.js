@@ -92,11 +92,11 @@ export const filters = [
     config: {},
   },
   {
-    id: 'MusicGenre',
-    label: 'Music Genre',
+    id: 'musicGenres',
+    label: 'Yoga styles',
     type: 'SelectMultipleFilter',
     group: 'secondary',
-    queryParamNames: ['pub_yogaStyles'],
+    queryParamNames: ['pub_musicGenres'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
@@ -109,7 +109,7 @@ export const filters = [
       options: [
         { key: 'afrobeats', label: 'Afrobeats' },
         { key: 'dancehall', label: 'Dancehall' },
-        { key: 'hiphop', label: 'HipHop' },
+        { key: 'hiphop', label: 'Hip-Hop' },
         { key: 'pop', label: 'Pop' },
         { key: 'amapiano', label: 'Amapiano' },
         { key: 'dubstep', label: 'Dubstep' },

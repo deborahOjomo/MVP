@@ -83,37 +83,37 @@ exports[`SearchPageComponent matches snapshot 1`] = `
             "config": Object {
               "options": Array [
                 Object {
-                  "key": "ashtanga",
-                  "label": "Ashtanga",
+                  "key": "afrobeats",
+                  "label": "Afrobeats",
                 },
                 Object {
-                  "key": "hatha",
-                  "label": "Hatha",
+                  "key": "dancehall",
+                  "label": "Dancehall",
                 },
                 Object {
-                  "key": "kundalini",
-                  "label": "Kundalini",
+                  "key": "hip-Hop",
+                  "label": "Hip-Hop",
                 },
                 Object {
-                  "key": "restorative",
-                  "label": "Restorative",
+                  "key": "amapiano",
+                  "label": "Amapiano",
                 },
                 Object {
-                  "key": "vinyasa",
-                  "label": "Vinyasa",
+                  "key": "pop",
+                  "label": "Pop",
                 },
                 Object {
-                  "key": "yin",
-                  "label": "Yin",
+                  "key": "dubstep",
+                  "label": "Dubstep",
                 },
               ],
               "searchMode": "has_all",
             },
             "group": "secondary",
-            "id": "yogaStyles",
+            "id": "musicGenres",
             "label": "Yoga styles",
             "queryParamNames": Array [
-              "pub_yogaStyles",
+              "pub_musicGenres",
             ],
             "type": "SelectMultipleFilter",
           },

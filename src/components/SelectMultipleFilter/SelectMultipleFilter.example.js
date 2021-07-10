@@ -3,15 +3,15 @@ import { withRouter } from 'react-router-dom';
 import SelectMultipleFilter from './SelectMultipleFilter';
 import { stringify, parse } from '../../util/urlHelpers';
 
-const URL_PARAM = 'pub_yogaStyles';
+const URL_PARAM = 'pub_musicGenres';
 
 const options = [
-  { key: 'ashtanga', label: 'Ashtanga' },
-  { key: 'hatha', label: 'Hatha' },
-  { key: 'kundalini', label: 'Kundalini' },
-  { key: 'restorative', label: 'Restorative' },
-  { key: 'vinyasa', label: 'Vinyasa' },
-  { key: 'yin', label: 'yin' },
+  { key: 'afrobeats', label: 'Afrobeats' },
+  { key: 'dancehall', label: 'Dancehall' },
+  { key: 'hiphop', label: 'Hip-Hop' },
+  { key: 'pop', label: 'Pop' },
+  { key: 'amapiano', label: 'Amapiano' },
+  { key: 'dubstep', label: 'Dubstep' },
 ];
 
 const handleSubmit = (values, history) => {
@@ -20,19 +20,19 @@ const handleSubmit = (values, history) => {
   history.push(`${window.location.pathname}${queryParams}`);
 };
 
-const YogaStylesFilterPopup = withRouter(props => {
+const musicGenresFilterPopup = withRouter(props => {
   const { history, location } = props;
 
   const params = parse(location.search);
-  const yogaStyles = params[URL_PARAM];
-  const initialValues = { [URL_PARAM]: !!yogaStyles ? yogaStyles : null };
+  const musicGenres = params[URL_PARAM];
+  const initialValues = { [URL_PARAM]: !!musicGenres ? musicGenres : null };
 
   return (
     <SelectMultipleFilter
       id="SelectMultipleFilterPopupExample"
-      name="yogaStyles"
+      name="musicGenres"
       queryParamNames={[URL_PARAM]}
-      label="yogaStyles"
+      label="musicGenres"
       onSubmit={values => handleSubmit(values, history)}
       showAsPopup={true}
       liveEdit={false}
@@ -43,25 +43,25 @@ const YogaStylesFilterPopup = withRouter(props => {
   );
 });
 
-export const YogaStylesFilterPopupExample = {
-  component: YogaStylesFilterPopup,
+export const musicGenresFilterPopupExample = {
+  component: musicGenresFilterPopup,
   props: {},
   group: 'filters',
 };
 
-const YogaStylesFilterPlain = withRouter(props => {
+const musicGenresFilterPlain = withRouter(props => {
   const { history, location } = props;
 
   const params = parse(location.search);
-  const yogaStyles = params[URL_PARAM];
-  const initialValues = { [URL_PARAM]: !!yogaStyles ? yogaStyles : null };
+  const musicGenres = params[URL_PARAM];
+  const initialValues = { [URL_PARAM]: !!musicGenres ? musicGenres : null };
 
   return (
     <SelectMultipleFilter
       id="SelectMultipleFilterPlainExample"
-      name="yogaStyles"
+      name="musicGenres"
       queryParamNames={[URL_PARAM]}
-      label="yogaStyles"
+      label="musicGenres"
       onSubmit={values => {
         handleSubmit(values, history);
       }}
@@ -73,8 +73,8 @@ const YogaStylesFilterPlain = withRouter(props => {
   );
 });
 
-export const YogaStylesFilterPlainExample = {
-  component: YogaStylesFilterPlain,
+export const musicGenresFilterPlainExample = {
+  component: musicGenresFilterPlain,
   props: {},
   group: 'filters',
 };

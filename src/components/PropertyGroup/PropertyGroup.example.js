@@ -1,20 +1,20 @@
 import PropertyGroup from './PropertyGroup';
 
 const exampleOptions = [
-  { key: 'ashtanga', label: 'Ashtanga' },
-  { key: 'hatha', label: 'Hatha' },
-  { key: 'kundalini', label: 'Kundalini' },
-  { key: 'restorative', label: 'Restorative' },
-  { key: 'vinyasa', label: 'Vinyasa' },
-  { key: 'yin', label: 'yin' },
+  { key: 'afrobeats', label: 'Afrobeats' },
+  { key: 'dancehall', label: 'Dancehall' },
+  { key: 'hiphop', label: 'Hip-Hop' },
+  { key: 'pop', label: 'Pop' },
+  { key: 'amapiano', label: 'Amapiano' },
+  { key: 'dubstep', label: 'Dubstep' },
 ];
 
 export const WithSomeSelected = {
   component: PropertyGroup,
   props: {
-    id: 'yogaStyles',
+    id: 'musicGenres',
     options: exampleOptions,
-    selectedOptions: ['hatha', 'vinyasa', 'yin'],
+    selectedOptions: ['hiphop', 'dancehall', 'rnb'],
     twoColumns: true,
   },
   group: 'misc',

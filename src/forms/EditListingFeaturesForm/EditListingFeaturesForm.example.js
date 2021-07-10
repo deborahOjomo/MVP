@@ -1,38 +1,39 @@
 import EditListingFeaturesForm from './EditListingFeaturesForm';
 
-const NAME = 'yogaStyles';
+const NAME = 'musicGenres';
 
-const initialValueArray = ['hatha', 'vinyasa', 'yin'];
+const initialValueArray = ['hiphop', 'dancehall', 'rnb'];
 const initialValues = { [NAME]: initialValueArray };
 
 const filterConfig = [
   {
-    id: 'yogaStyles',
-    label: 'Yoga styles',
+    id: 'musicGenres',
+    label: 'Music Genre',
     type: 'SelectMultipleFilter',
     group: 'secondary',
-    queryParamNames: ['pub_yogaStyles'],
+    queryParamNames: ['pub_musicGenres'],
     config: {
       mode: 'has_all',
       options: [
-        { key: 'ashtanga', label: 'Ashtanga' },
-        { key: 'hatha', label: 'Hatha' },
-        { key: 'kundalini', label: 'Kundalini' },
-        { key: 'restorative', label: 'Restorative' },
-        { key: 'vinyasa', label: 'Vinyasa' },
-        { key: 'yin', label: 'Yin' },
+        { key: 'afrobeats', label: 'Afrobeats' },
+        { key: 'dancehall', label: 'Dancehall' },
+        { key: 'hiphop', label: 'Hip-Hop' },
+        { key: 'pop', label: 'Pop' },
+        { key: 'amapiano', label: 'Amapiano' },
+        { key: 'rnb', label: 'R&B' },
+        { key: 'dubstep', label: 'Dubstep' },
       ],
     },
   },
 ];
 
-export const YogaStyles = {
+export const musicGenres = {
   component: EditListingFeaturesForm,
   props: {
     name: NAME,
     onSubmit: values => console.log('EditListingFeaturesForm submit:', values),
     initialValues: initialValues,
-    saveActionMsg: 'Save yoga styles',
+    saveActionMsg: 'Save dj genre',
     updated: false,
     updateInProgress: false,
     disabled: false,
