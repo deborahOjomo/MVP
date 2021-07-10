@@ -265,7 +265,7 @@ AuthenticationPageComponent.defaultProps = {
   currentUser: null,
   loginError: null,
   signupError: null,
-  tab: 'sigp',
+  tab: 'signup',
   sendVerificationEmailError: null,
 };
 
