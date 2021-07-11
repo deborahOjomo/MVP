@@ -93,9 +93,9 @@ export const filters = [
   },
   {
     id: 'musicGenres',
-    label: 'Yoga styles',
+    label: 'Music Genre',
     type: 'SelectMultipleFilter',
-    group: 'secondary',
+    group: 'primary',
     queryParamNames: ['pub_musicGenres'],
     config: {
       // Optional modes: 'has_all', 'has_any'
@@ -120,18 +120,18 @@ export const filters = [
     id: 'eventType',
     label: 'Event Type',
     type: 'SelectSingleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_certificate'],
+    group: 'primary',
+    queryParamNames: ['eventType'],
     config: {
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'birthday', label: 'Birthday Party' },
-        { key: 'gardenParty', label: 'Garden party' },
-        { key: 'gardenParty', label: 'Garden party' },
-        { key: 'gardenParty', label: 'Garden party' },
+        { key: 'weddings', label: 'Wedding' },
+        {  key: 'Birthday', label: 'Birthday' },
+        { key: 'BBQ', label: 'BBQ'},
+        { key: 'Other', label: 'Other' },
       ],
     },
   },
