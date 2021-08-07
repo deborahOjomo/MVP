@@ -1,7 +1,16 @@
 @import '../../marketplace.css';
 
+.li {
+  list-style-type: circle;
+}
 .root {
   & p {
+    @apply --marketplaceH4FontStyles;
+  }
+  & li {
+    @apply --marketplaceH4FontStyles;
+  }
+  & ul {
     @apply --marketplaceH4FontStyles;
   }
   & h2 {

@@ -35,7 +35,7 @@ export const EditListingLocationFormComponent = props => (
         values,
       } = formRenderProps;
 
-      const titleRequiredMessage = intl.formatMessage({ id: 'EditListingLocationForm.address' });
+      const titleRequiredMessage = intl.formatMessage({ id: 'EditListingLocationForm.country' });
       const addressPlaceholderMessage = intl.formatMessage({
         id: 'EditListingLocationForm.addressPlaceholder',
       });
@@ -75,6 +75,7 @@ export const EditListingLocationFormComponent = props => (
       const submitReady = (updated && pristine) || ready;
       const submitInProgress = updateInProgress;
       const submitDisabled = invalid || disabled || submitInProgress;
+      console.log("saveAction",saveActionMsg)
 
       return (
         <Form className={classes} onSubmit={handleSubmit}>
@@ -122,7 +123,6 @@ export const EditListingLocationFormComponent = props => (
     }}
   />
 );
-
 EditListingLocationFormComponent.defaultProps = {
   selectedPlace: null,
   fetchErrors: null,

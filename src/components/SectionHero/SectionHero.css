@@ -71,6 +71,7 @@
 }
 
 .heroMainTitle {
+  text-align: center;
   @apply --marketplaceHeroTitleFontStyles;
   color: var(--matterColorLight);
 

@@ -129,12 +129,31 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         { key: 'weddings', label: 'Wedding' },
-        {  key: 'Birthday', label: 'Birthday' },
-        { key: 'BBQ', label: 'BBQ'},
+        { key: 'Birthday', label: 'Birthday' },
+        { key: 'BBQ', label: 'BBQ' },
         { key: 'Other', label: 'Other' },
       ],
     },
   },
+
+  // {
+  //   id: 'certificate',
+  //   label: 'Certificate',
+  //   type: 'SelectSingleFilter',
+  //   group: 'secondary',
+  //   queryParamNames: ['pub_certificate'],
+  //   config: {
+  //     // "key" is the option you see in Flex Console.
+  //     // "label" is set here for the UI only.
+  //     // Note: label is not added through the translation files
+  //     // to make filter customizations a bit easier.
+  //     options: [
+  //       { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true },
+  //       { key: '200h', label: 'Registered yoga teacher 200h' },
+  //       { key: '500h', label: 'Registered yoga teacher 500h' },
+  //     ],
+  //   },
+  // },
 ];
 
 export const sortConfig = {

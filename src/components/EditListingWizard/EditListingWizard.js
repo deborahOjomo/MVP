@@ -25,7 +25,6 @@ import EditListingWizardTab, {
   POLICY,
   LOCATION,
   PRICING,
-  MUSIC,
   PHOTOS,
 } from './EditListingWizardTab';
 import css from './EditListingWizard.css';
@@ -45,7 +44,6 @@ export const TABS = [
   //POLICY,
   LOCATION,
   PRICING,
-  MUSIC,
   ...availabilityMaybe,
   PHOTOS,
 ];
@@ -72,8 +70,6 @@ const tabLabel = (intl, tab) => {
     key = 'EditListingWizard.tabLabelAvailability';
   } else if (tab === PHOTOS) {
     key = 'EditListingWizard.tabLabelPhotos';
-  } else if (tab === MUSIC) {
-    key = 'EditListingWizard.tabLabelMusic'
   }
 
   return intl.formatMessage({ id: key });
@@ -94,7 +90,6 @@ const tabCompleted = (tab, listing) => {
     geolocation,
     price,
     title,
-    music,
     publicData,
   } = listing.attributes;
   const images = listing.images;
@@ -114,8 +109,6 @@ const tabCompleted = (tab, listing) => {
       return !!availabilityPlan;
     case PHOTOS:
       return images && images.length > 0;
-    case MUSIC:
-      return !!music;
     default:
       return false;
   }

@@ -57,6 +57,16 @@ const EditListingDescriptionFormComponent = props => (
         id: 'EditListingDescriptionForm.descriptionRequired',
       });
 
+      const musicLinkMessage = intl.formatMessage({
+        id: 'EditListingDescriptionForm.musicLink',
+      });
+      const musicLinkPlaceholderMessage = intl.formatMessage({
+        id: 'EditListingDescriptionForm.musicLinkPlaceholder',
+      });
+      const musicLinkRequiredMessage = intl.formatMessage({
+        id: 'EditListingDescriptionForm.musicLinkRequired',
+      });
+
       const { updateListingError, createListingDraftError, showListingsError } = fetchErrors || {};
       const errorMessageUpdateListing = updateListingError ? (
         <p className={css.error}>
@@ -109,12 +119,22 @@ const EditListingDescriptionFormComponent = props => (
             validate={composeValidators(required(descriptionRequiredMessage))}
           />
 
-          <CustomCertificateSelectFieldMaybe
+          <FieldTextInput
+            id="musicLink"
+            name="musicLink"
+            className={css.musicLink}
+            type="text"
+            label={musicLinkMessage}
+            placeholder={musicLinkPlaceholderMessage}
+            validate={composeValidators(required(musicLinkRequiredMessage))}
+          />
+
+          {/* <CustomCertificateSelectFieldMaybe
             id="certificate"
             name="certificate"
             certificateOptions={certificateOptions}
             intl={intl}
-          />
+          /> */}
 
           <Button
             className={css.submitButton}
