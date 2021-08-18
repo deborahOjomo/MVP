@@ -13,3 +13,13 @@
     max-width: 563px;
   }
 }
+.pageTitle {
+  text-align: center;
+  font-size: 55px;
+  margin-top: 55px;
+}
+
+.root {
+  width: 70%;
+  margin: 5% auto 5% auto;
+}
