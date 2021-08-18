@@ -1,4 +1,4 @@
-# Sharetribe Flex Template for Web: time-based process
+# Sharetribe Flex Template for Web: time-based process 
 
 [![CircleCI](https://circleci.com/gh/sharetribe/ftw-hourly.svg?style=svg)](https://circleci.com/gh/sharetribe/ftw-hourly)
 
