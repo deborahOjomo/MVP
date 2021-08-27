@@ -30,6 +30,7 @@ const SearchPage = loadable(() => import(/* webpackChunkName: "SearchPage" */ /*
 const StripePayoutPage = loadable(() => import(/* webpackChunkName: "StripePayoutPage" */ './containers/StripePayoutPage/StripePayoutPage'));
 const TermsOfServicePage = loadable(() => import(/* webpackChunkName: "TermsOfServicePage" */ './containers/TermsOfServicePage/TermsOfServicePage'));
 const TransactionPage = loadable(() => import(/* webpackChunkName: "TransactionPage" */ './containers/TransactionPage/TransactionPage'));
+const FaqPage = loadable(() => import(/* webpackChunkName: "FaqPage" */ './containers/FaqPage/FaqPage'));
 
 // Styleguide helps you to review current components and develop new ones
 const StyleguidePage = loadable(() => import(/* webpackChunkName: "StyleguidePage" */ './containers/StyleguidePage/StyleguidePage'));
@@ -294,6 +295,11 @@ const routeConfiguration = () => {
       path: '/styleguide/g/:group',
       name: 'StyleguideGroup',
       component: StyleguidePage,
+    },
+    {
+      path: '/faq',
+      name: 'FaqPage',
+      component: FaqPage,
     },
     {
       path: '/styleguide/c/:component',

@@ -473,6 +473,31 @@
   }
 }
 
+.musicTitle {
+  /* Font */
+  @apply --marketplaceH3FontStyles;
+  color: var(--matterColorAnti);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+  @media (--viewportMedium) {
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+}
+
+.sectionMusic {
+  padding: 0 24px;
+  margin-bottom: 5px;
+
+  @media (--viewportMedium) {
+    padding: 0;
+  }
+  @media (--viewportLarge) {
+    margin-bottom: 3px;
+  }
+}
+
 .sectionReviews {
   padding: 0 24px;
   margin-bottom: 5px;

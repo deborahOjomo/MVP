@@ -1,6 +1,16 @@
 @import '../../styles/propertySets.css';
 
+.li {
+  list-style-type: circle;
+}
+
 .root {
+  & li {
+    @apply --marketplaceH4FontStyles;
+  }
+  & ul {
+    @apply --marketplaceH4FontStyles;
+  }
   & p {
     @apply --marketplaceH4FontStyles;
   }

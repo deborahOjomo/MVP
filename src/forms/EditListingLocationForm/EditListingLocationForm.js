@@ -35,7 +35,7 @@ export const EditListingLocationFormComponent = props => (
         values,
       } = formRenderProps;
 
-      const titleRequiredMessage = intl.formatMessage({ id: 'EditListingLocationForm.address' });
+      const titleRequiredMessage = intl.formatMessage({ id: 'EditListingLocationForm.country' });
       const addressPlaceholderMessage = intl.formatMessage({
         id: 'EditListingLocationForm.addressPlaceholder',
       });
@@ -48,14 +48,6 @@ export const EditListingLocationFormComponent = props => (
 
       const optionalText = intl.formatMessage({
         id: 'EditListingLocationForm.optionalText',
-      });
-
-      const buildingMessage = intl.formatMessage(
-        { id: 'EditListingLocationForm.building' },
-        { optionalText: optionalText }
-      );
-      const buildingPlaceholderMessage = intl.formatMessage({
-        id: 'EditListingLocationForm.buildingPlaceholder',
       });
 
       const { updateListingError, showListingsError } = fetchErrors || {};
@@ -97,15 +89,6 @@ export const EditListingLocationFormComponent = props => (
               autocompleteSearchRequired(addressRequiredMessage),
               autocompletePlaceSelected(addressNotRecognizedMessage)
             )}
-          />
-
-          <FieldTextInput
-            className={css.building}
-            type="text"
-            name="building"
-            id="building"
-            label={buildingMessage}
-            placeholder={buildingPlaceholderMessage}
           />
 
           <Button

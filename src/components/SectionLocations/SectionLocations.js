@@ -8,8 +8,9 @@ import { NamedLink } from '../../components';
 
 import css from './SectionLocations.module.css';
 
-import nyImage from './images/ny-yogi.jpg';
-
+import trustImage from './images/ICON_TRUST.png';
+import djChoice from './images/ICON_DJCHOICE.png';
+import hoursImage from './images/ICON_247.png';
 class LocationImage extends Component {
   render() {
     const { alt, ...rest } = this.props;
@@ -47,47 +48,39 @@ const SectionLocations = props => {
       <div className={css.title}>
         <FormattedMessage id="SectionLocations.title" />
       </div>
-   
-      <ul className={css.steps}>
+      <div>
+        <ul className={css.steps}>
+          <li className={css.step}>
+            <img src={trustImage} className={css.icon} />
+            <h2 className={css.stepTitle}>
+              <FormattedMessage id="SectionLocations.part1Title" />
+            </h2>
+            <p>
+              <FormattedMessage id="SectionLocations.part1Text" />
+            </p>
+          </li>
 
-        <li className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionLocations.part1Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionLocations.part1Text" />
-          </p>
-        </li>
+          <li className={css.step}>
+            <img src={djChoice} className={css.icon} />
+            <h2 className={css.stepTitle}>
+              <FormattedMessage id="SectionLocations.part2Title" />
+            </h2>
+            <p>
+              <FormattedMessage id="SectionLocations.part2Text" />
+            </p>
+          </li>
 
-        <li className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionLocations.part2Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionLocations.part2Text" />
-          </p>
-        </li>
-
-        <li className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionLocations.part3Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionLocations.part3Text" />
-          </p>
-        </li>
-
-        <li className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionLocations.part4Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionLocations.part4Text" />
-          </p>
-        </li>
-
-
-      </ul>
+          <li className={css.step}>
+            <img src={hoursImage} className={css.icon} />
+            <h2 className={css.stepTitle}>
+              <FormattedMessage id="SectionLocations.part3Title" />
+            </h2>
+            <p>
+              <FormattedMessage id="SectionLocations.part3Text" />
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

@@ -92,11 +92,11 @@ export const filters = [
     config: {},
   },
   {
-    id: 'MusicGenre',
+    id: 'musicGenres',
     label: 'Music Genre',
     type: 'SelectMultipleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_yogaStyles'],
+    group: 'primary',
+    queryParamNames: ['pub_musicGenres'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
@@ -109,7 +109,7 @@ export const filters = [
       options: [
         { key: 'afrobeats', label: 'Afrobeats' },
         { key: 'dancehall', label: 'Dancehall' },
-        { key: 'hiphop', label: 'HipHop' },
+        { key: 'hiphop', label: 'Hip-Hop' },
         { key: 'pop', label: 'Pop' },
         { key: 'amapiano', label: 'Amapiano' },
         { key: 'dubstep', label: 'Dubstep' },
@@ -120,8 +120,8 @@ export const filters = [
     id: 'eventType',
     label: 'Event Type',
     type: 'SelectSingleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_certificate'],
+    group: 'primary',
+    queryParamNames: ['eventType'],
     config: {
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
@@ -129,9 +129,9 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         { key: 'birthday', label: 'Birthday Party' },
-        { key: 'gardenParty', label: 'Garden party' },
-        { key: 'gardenParty', label: 'Garden party' },
-        { key: 'gardenParty', label: 'Garden party' },
+        { key: 'weddings', label: 'Wedding' },
+        { key: 'BBQ', label: 'BBQ' },
+        { key: 'Other', label: 'Other' },
       ],
     },
   },

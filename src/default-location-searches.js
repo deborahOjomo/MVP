@@ -9,53 +9,34 @@ const { LatLng, LatLngBounds } = sdkTypes;
 // `predictionPlace` (util.types.place) properties.
 const defaultLocations = [
   {
-    id: 'default-new-york',
+    id: 'default-london',
     predictionPlace: {
-      address: 'New York City, New York, USA',
+      address: 'London, Greater London, England, United Kingdom',
       bounds: new LatLngBounds(
-        new LatLng(40.917576401307, -73.7008392055224),
-        new LatLng(40.477399, -74.2590879797556)
+        new LatLng(51.72939118, 0.14348224),
+        new LatLng(51.29405981, -0.36082876)
       ),
     },
   },
   {
     id: 'default-los-angeles',
     predictionPlace: {
-      address: 'Los Angeles, California, USA',
-      bounds: new LatLngBounds(
-        new LatLng(34.161440999758, -118.121305008073),
-        new LatLng(33.9018913203336, -118.521456965901)
-      ),
+      address: 'Birmingham, West Midlands, England, United Kingdom',
+      bounds: new LatLngBounds(new LatLng(52.570615, -1.597742), new LatLng(52.327674, -2.045202)),
     },
   },
   {
-    id: 'default-san-francisco',
+    id: 'default-manchester',
     predictionPlace: {
-      address: 'San Francisco, California, USA',
-      bounds: new LatLngBounds(
-        new LatLng(37.8324430069081, -122.354995082683),
-        new LatLng(37.6044780500533, -122.517910874663)
-      ),
+      address: 'Manchester, Greater Manchester, England, United Kingdom',
+      bounds: new LatLngBounds(new LatLng(53.586199, -2.087698), new LatLng(53.348612, -2.52355)),
     },
   },
   {
-    id: 'default-seattle',
+    id: 'default-bristol',
     predictionPlace: {
-      address: 'Seattle, Washington, USA',
-      bounds: new LatLngBounds(
-        new LatLng(47.7779392908564, -122.216605992108),
-        new LatLng(47.3403950185547, -122.441233019046)
-      ),
-    },
-  },
-  {
-    id: 'default-portland',
-    predictionPlace: {
-      address: 'Portland, Oregon, USA',
-      bounds: new LatLngBounds(
-        new LatLng(45.858099013046, -122.441059986416),
-        new LatLng(45.3794799927623, -122.929215816001)
-      ),
+      address: 'Bristol, England, United Kingdom',
+      bounds: new LatLngBounds(new LatLng(51.66977, -2.293634), new LatLng(51.27028, -2.872346)),
     },
   },
 ];

@@ -106,9 +106,14 @@
 
 .step {
   @media (--viewportMedium) {
-    width: 324px;
-    margin-right: 40px;
+    width: 50%;
   }
+}
+
+.icon {
+  margin-top: 60px;
+  width: 90px;
+  height: 100px;
 }
 
 .stepTitle:before {

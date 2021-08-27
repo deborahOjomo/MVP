@@ -8,16 +8,11 @@
 
   width: 100%;
   padding: 24px 24px 42px 24px;
-  background-color: rgb(51, 52, 53);
+  background-color: #f9f9f9;
   /* background-color: var(--matterColorBright); */
 
   @media (--viewportMedium) {
     padding: 0 24px 33px 24px;
-  }
-
-  @media (--viewportLarge) {
-    padding: 0 0 81px 0;
-    border-top: none;
   }
 }
 
@@ -179,7 +174,7 @@
 
 .link {
   /* Font */
-  @apply --marketplaceH5FontStyles;
+  /* @apply --marketplaceH5FontStyles; */
   line-height: 20px;
   color: var(--marketplaceColor);
   transition: var(--transitionStyleButton);

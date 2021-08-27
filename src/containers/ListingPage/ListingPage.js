@@ -57,6 +57,7 @@ import SectionDescriptionMaybe from './SectionDescriptionMaybe';
 import SectionFeaturesMaybe from './SectionFeaturesMaybe';
 import SectionReviews from './SectionReviews';
 import SectionMapMaybe from './SectionMapMaybe';
+import SectionMusicMaybe from './SectionMusicMaybe';
 import css from './ListingPage.module.css';
 
 const MIN_LENGTH_FOR_LONG_WORDS_IN_TITLE = 16;
@@ -383,7 +384,7 @@ export class ListingPageComponent extends Component {
       </NamedLink>
     );
 
-    const yogaStylesOptions = findOptionsForSelectFilter('yogaStyles', filterConfig);
+    const musicGenresOptions = findOptionsForSelectFilter('musicGenres', filterConfig);
     const certificateOptions = findOptionsForSelectFilter('certificate', filterConfig);
 
     return (
@@ -436,12 +437,13 @@ export class ListingPageComponent extends Component {
                     onContactUser={this.onContactUser}
                   />
                   <SectionDescriptionMaybe description={description} />
-                  <SectionFeaturesMaybe options={yogaStylesOptions} publicData={publicData} />
+                  <SectionFeaturesMaybe options={musicGenresOptions} publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
                     publicData={publicData}
                     listingId={currentListing.id}
                   />
+                  <SectionMusicMaybe publicData={publicData.musicLink} />
                   <SectionReviews reviews={reviews} fetchReviewsError={fetchReviewsError} />
                 </div>
                 <BookingPanel
