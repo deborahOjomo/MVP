@@ -20,8 +20,8 @@ import {
 } from '../../components';
 import { TopbarContainer } from '../../containers';
 
-import facebookImage from '../../assets/talentbookr-logo.jpg';
-import twitterImage from '../../assets/talentbookr-logo.jpg';
+import facebookImage from '../../assets/talentbookr-logo.png';
+import twitterImage from '../../assets/talentbookr-logo.png';
 import css from './LandingPage.module.css';
 
 export const LandingPageComponent = props => {

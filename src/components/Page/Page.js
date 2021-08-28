@@ -10,8 +10,8 @@ import { metaTagProps } from '../../util/seo';
 import { canonicalRoutePath } from '../../util/routes';
 import { CookieConsent } from '../../components';
 
-import facebookImage from '../../assets/talentbookr-logo.jpg';
-import twitterImage from '../../assets/talentbookr-logo.jpg';
+import facebookImage from '../../assets/talentbookr-logo.png';
+import twitterImage from '../../assets/talentbookr-logo.png';
 import css from './Page.module.css';
 
 const preventDefault = e => {
