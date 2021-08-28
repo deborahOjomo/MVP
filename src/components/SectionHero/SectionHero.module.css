@@ -90,6 +90,7 @@
   composes: animation;
 
   animation-delay: 0.8s;
+  border-radius: 12px;
 
   @media (--viewportMedium) {
     display: block;
