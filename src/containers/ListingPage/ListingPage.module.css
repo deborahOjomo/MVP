@@ -129,7 +129,7 @@
     left: auto;
     right: auto;
     height: calc(0.41 * 100vw);
-    max-height: 50vh;
+    max-height: 30vh;
     object-fit: cover;
     border-radius: var(--borderRadius);
 
