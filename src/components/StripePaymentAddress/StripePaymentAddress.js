@@ -134,7 +134,7 @@ const StripePaymentAddress = props => {
         />
       </div>
       <div className={css.formRow}>
-        <FieldTextInput
+        {/* <FieldTextInput
           id={`${fieldId}.state`}
           name="state"
           disabled={disabled}
@@ -144,7 +144,7 @@ const StripePaymentAddress = props => {
           label={stateLabel}
           placeholder={statePlaceholder}
           onUnmount={() => form.change('state', undefined)}
-        />
+        /> */}
 
         <FieldSelect
           id={`${fieldId}.country`}

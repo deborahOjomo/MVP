@@ -1,6 +1,7 @@
 // Add here the translations of the country names using key "<language_code>: 'transalation'" e.g. fi: 'Afganistan'
 // prettier-ignore
 const countryCodes = [
+  { code: 'GB', en: 'United Kingdom', fr: 'Royaume-Uni', es: 'Reino Unido', de: 'Vereinigtes Königreich Großbritannien und Nordirland' },
   { code: 'AF', en: 'Afghanistan', fr: 'Afghanistan', es: 'Afganistán', de: 'Afghanistan' },
   { code: 'AX', en: 'Åland Islands', fr: 'Îles Åland', es: 'Islas Áland', de: 'Åland' },
   { code: 'AL', en: 'Albania', fr: 'Albanie', es: 'Albania', de: 'Albanien' },
