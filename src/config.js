@@ -87,8 +87,8 @@ const sentryDsn = process.env.REACT_APP_SENTRY_DSN;
 const usingSSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
 
 // Address information is used in SEO schema for Organization (http://schema.org/PostalAddress)
-const addressCountry = 'FI';
-const addressRegion = 'Helsinki';
+const addressCountry = 'GB';
+const addressRegion = 'London';
 const postalCode = '00100';
 const streetAddress = 'Bulevardi 14';
 
@@ -102,7 +102,7 @@ const siteTitle = 'TalentBookr';
 const siteTwitterHandle = '@TalentBookr';
 
 // Instagram page is used in SEO schema (http://schema.org/Organization)
-const siteInstagramPage = null;
+const siteInstagramPage = 'https://www.instagram.com/talentbookr/';
 
 // Facebook page is used in SEO schema (http://schema.org/Organization)
 const siteFacebookPage = 'https://www.facebook.com/talentbookr/';

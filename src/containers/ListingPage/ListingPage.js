@@ -58,6 +58,7 @@ import SectionFeaturesMaybe from './SectionFeaturesMaybe';
 import SectionReviews from './SectionReviews';
 import SectionMapMaybe from './SectionMapMaybe';
 import SectionMusicMaybe from './SectionMusicMaybe';
+import SectionEvent from './SectionEvent';
 import css from './ListingPage.module.css';
 
 const MIN_LENGTH_FOR_LONG_WORDS_IN_TITLE = 16;
@@ -384,6 +385,7 @@ export class ListingPageComponent extends Component {
       </NamedLink>
     );
 
+    const eventOptions = findOptionsForSelectFilter('event', filterConfig);
     const musicGenresOptions = findOptionsForSelectFilter('musicGenres', filterConfig);
     const certificateOptions = findOptionsForSelectFilter('certificate', filterConfig);
 
@@ -438,6 +440,7 @@ export class ListingPageComponent extends Component {
                   />
                   <SectionDescriptionMaybe description={description} />
                   <SectionFeaturesMaybe options={musicGenresOptions} publicData={publicData} />
+                  <SectionEvent options={eventOptions} publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
                     publicData={publicData}

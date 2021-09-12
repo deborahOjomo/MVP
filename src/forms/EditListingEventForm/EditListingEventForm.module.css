@@ -1,25 +1,21 @@
 .root {
+  /* Expand to available space */
+  flex-grow: 1;
+
   /* Dimensions */
   width: 100%;
   height: auto;
 
   /* Layout */
   display: flex;
-  flex: 1;
   flex-direction: column;
 
-  padding-top: 1px;
-
   @media (--viewportMedium) {
-    padding-top: 2px;
+    padding-top: 1px;
   }
 }
 
-.error {
-  color: var(--failColor);
-}
-
-.formMargins {
+.event {
   margin-bottom: 24px;
 
   @media (--viewportMedium) {
@@ -27,17 +23,8 @@
   }
 }
 
-.title {
-  composes: formMargins;
-}
-
-.description {
-  composes: formMargins;
-  flex-shrink: 0;
-}
-
-.certificate {
-  composes: formMargins;
+.error {
+  color: var(--failColor);
 }
 
 .submitButton {
@@ -51,7 +38,3 @@
     margin-top: 100px;
   }
 }
-
-/* .musicLink {
-  @apply --EditListingDescriptionForm_formMargins;
-} */

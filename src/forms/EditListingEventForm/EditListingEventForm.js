@@ -9,9 +9,9 @@ import { propTypes } from '../../util/types';
 import config from '../../config';
 import { Button, FieldCheckboxGroup, Form } from '../../components';
 
-import css from './EditListingFeaturesForm.module.css';
+import css from './EditListingEventForm.module.css';
 
-const EditListingFeaturesFormComponent = props => (
+const EditListingEventFormComponent = props => (
   <FinalForm
     {...props}
     mutators={{ ...arrayMutators }}
@@ -35,18 +35,18 @@ const EditListingFeaturesFormComponent = props => (
       const submitReady = (updated && pristine) || ready;
       const submitInProgress = updateInProgress;
       const submitDisabled = disabled || submitInProgress;
-      const options = findOptionsForSelectFilter('musicGenres', filterConfig);
+      const options = findOptionsForSelectFilter('event', filterConfig);
 
       const { updateListingError, showListingsError } = fetchErrors || {};
       const errorMessage = updateListingError ? (
         <p className={css.error}>
-          <FormattedMessage id="EditListingFeaturesForm.updateFailed" />
+          <FormattedMessage id="EditListingEventForm.updateFailed" />
         </p>
       ) : null;
 
       const errorMessageShowListing = showListingsError ? (
         <p className={css.error}>
-          <FormattedMessage id="EditListingFeaturesForm.showListingFailed" />
+          <FormattedMessage id="EditListingEventForm.showListingFailed" />
         </p>
       ) : null;
 
@@ -55,7 +55,7 @@ const EditListingFeaturesFormComponent = props => (
           {errorMessage}
           {errorMessageShowListing}
 
-          <FieldCheckboxGroup className={css.features} id={name} name={name} options={options} />
+          <FieldCheckboxGroup className={css.event} id={name} name={name} options={options} />
 
           <Button
             className={css.submitButton}
@@ -72,14 +72,14 @@ const EditListingFeaturesFormComponent = props => (
   />
 );
 
-EditListingFeaturesFormComponent.defaultProps = {
+EditListingEventFormComponent.defaultProps = {
   rootClassName: null,
   className: null,
   fetchErrors: null,
   filterConfig: config.custom.filters,
 };
 
-EditListingFeaturesFormComponent.propTypes = {
+EditListingEventFormComponent.propTypes = {
   rootClassName: string,
   className: string,
   name: string.isRequired,
@@ -96,6 +96,6 @@ EditListingFeaturesFormComponent.propTypes = {
   filterConfig: propTypes.filterConfig,
 };
 
-const EditListingFeaturesForm = EditListingFeaturesFormComponent;
+const EditListingEventForm = EditListingEventFormComponent;
 
-export default EditListingFeaturesForm;
+export default EditListingEventForm;
