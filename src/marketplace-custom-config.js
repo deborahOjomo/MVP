@@ -123,6 +123,8 @@ export const filters = [
     group: 'primary',
     queryParamNames: ['pub_event'],
     config: {
+      searchMode: 'has_any',
+
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
       // Note: label is not added through the translation files

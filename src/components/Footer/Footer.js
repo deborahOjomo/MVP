@@ -55,7 +55,7 @@ const renderSocialMediaLinks = intl => {
 };
 
 const Footer = props => {
-  const { rootClassName, className, intl } = props;
+  const { rootClassName, className, intl, currentUserListing, currentUserListingFetched } = props;
   const socialMediaLinks = renderSocialMediaLinks(intl);
   const classes = classNames(rootClassName || css.root, className);
 
@@ -102,6 +102,11 @@ const Footer = props => {
                 <li className={css.listItem}>
                   <NamedLink name="AboutPage" to={{ hash: '#contact' }} className={css.link}>
                     <FormattedMessage id="Footer.toContactPage" />
+                  </NamedLink>
+                </li>
+                <li className={css.listItem}>
+                  <NamedLink name="NewListingPage" className={css.link}>
+                    <FormattedMessage id="Footer.toDJPage" />
                   </NamedLink>
                 </li>
               </ul>
