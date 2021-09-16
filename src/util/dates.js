@@ -337,7 +337,7 @@ export const getStartHours = (intl, timeZone, startTime, endTime) => {
  *
  * @returns {Array} an array of objects with keys timestamp and timeOfDay.
  */
-export const getEndHours = (intl, timeZone, startTime, endTime) => {
+export const getEndHours = (intl, timeZone, startTime, endTime=24.00) => {
   const hours = getSharpHours(intl, timeZone, startTime, endTime);
   return hours.length < 2 ? [] : hours.slice(1);
 };
@@ -496,7 +496,7 @@ export const resetToStartOfDay = (date, timeZone, offset = 0) => {
   return moment(date)
     .clone()
     .tz(timeZone)
-    .startOf('day')
+    .startOf('night')
     .add(offset, 'days')
     .toDate();
 };
