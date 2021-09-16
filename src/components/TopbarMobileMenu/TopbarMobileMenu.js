@@ -15,6 +15,7 @@ import {
   NamedLink,
   NotificationBadge,
   OwnListingLink,
+  ListingLink,
 } from '../../components';
 
 import css from './TopbarMobileMenu.module.css';
@@ -105,6 +106,11 @@ const TopbarMobileMenu = props => {
           listingFetched={currentUserListingFetched}
           className={css.navigationLink}
         />
+        <ListingLink
+          className={css.navigationLink}
+          listing={currentUserListing}
+          children={<FormattedMessage id="TopbarMobileMenu.yourListingsLink" />}
+        />
         <NamedLink
           className={classNames(css.navigationLink, currentPageClass('ProfileSettingsPage'))}
           name="ProfileSettingsPage"
@@ -119,9 +125,9 @@ const TopbarMobileMenu = props => {
         </NamedLink>
       </div>
       <div className={css.footer}>
-        <NamedLink className={css.createNewListingLink} name="NewListingPage">
-          <FormattedMessage id="TopbarMobileMenu.newListingLink" />
-        </NamedLink>
+        <InlineTextButton rootClassName={css.logoutButton} onClick={onLogout}>
+          <FormattedMessage id="TopbarMobileMenu.logoutLink" />
+        </InlineTextButton>
       </div>
     </div>
   );
