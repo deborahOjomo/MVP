@@ -6,7 +6,7 @@ const { Money } = types;
 // line-item/night, line-item/day or line-item/units
 const bookingUnitType = 'line-item/units';
 const PROVIDER_COMMISSION_PERCENTAGE = 5.1;
-const CUSTOMER_COMMISSION_PERCENTAGE = 10.9;
+const CUSTOMER_COMMISSION_PERCENTAGE = 6;
 /** Returns collection of lineItems (max 50)
  *
  * Each line items has following fields:
