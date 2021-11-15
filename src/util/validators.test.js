@@ -164,8 +164,8 @@ describe('validators', () => {
     it('should fail on http://localhost', () => {
       expect(validBusinessURL('fail')('http://localhost/')).toEqual('fail');
     });
-    it('should fail on localhost:3000', () => {
-      expect(validBusinessURL('fail')('localhost:3000')).toEqual('fail');
+    it('should fail on localhost:3500', () => {
+      expect(validBusinessURL('fail')('localhost:3500')).toEqual('fail');
     });
     it('should fail on <localhosttunnel.com>', () => {
       expect(validBusinessURL('fail')('<localhosttunnel.com>')).toEqual('fail');

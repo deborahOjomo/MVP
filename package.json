@@ -129,7 +129,7 @@
   },
   "engines": {
     "node": "16.x",
-    "yarn": "1.22.11",
+    "yarn": "1.22.10",
     "npm": "7.x"
   },
   "prettier": {
