@@ -25,7 +25,7 @@ const AboutPage = () => {
       schema={{
         '@context': 'http://schema.org',
         '@type': 'AboutPage',
-        description: 'About Yogatime',
+        description: 'About ',
         name: 'About page',
       }}
     >
@@ -35,53 +35,45 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Find new depths in your yoga practice</h1>
+          <h1 className={css.pageTitle}>We are helping people enhance their most beautiful memories </h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>Yoga was listed by UNESCO as an intangible cultural heritage.</p>
             </div>
 
-            <div className={css.contentMain}>
+            <div className={css.pageTitle}>
+              <h1> Our Story </h1>
               <h2>
-                Each yoga practitioner is an individual, and each one of us needs different care.
-                Working together with an experienced yoga teacher offers the possibility to rise
-                our practise to a whole new level.
+               The idea for talentbookr came from our founders’ experience as event promoters.
+               We were fortunate enough to holding over 20 events hosted in the South Coast between 2013 - 2016 featuring UK’s top upcoming DJs and artists. During this time, we endured multiple no-shows and stolen deposits which made it extremely difficult and stressful to organise successful events.
+               After we realised that we are not the only ones with such issues, the “eureka” moment happened. 
+               Our experience leads us here today to remove any entertainment worries and help you enhance a beautiful memory.
               </h2>
 
-              <p>
-                Whether it is the alignment of asanas or being able to set the focus of the class,
-                we all have our own struggles and goals. Some of these cannot be addressed in a
-                regular class of twenty yogis. Working together with the experienced yoga teachers
-                from Yogatime, you can together create just the right class for you.
-              </p>
-
-              <h3 className={css.subtitle}>Are you a yoga teacher?</h3>
+              <h1> Our values </h1>
 
               <p>
-                Yogatime offers you a platform through which you can reach thousands of yoga
-                practitioners. Offering private yoga classes through Yogatime offers you a
-                possibility to grow your customer base and earn some extra income on top of your
-                regular classes.
-              </p>
-
-              <h3 id="contact" className={css.subtitle}>
-                Create your own marketplace like Yogatime
-              </h3>
-              <p>
-                Yogatime is brought to you by{' '}
-                <ExternalLink href="http://sharetribe.com">Sharetribe</ExternalLink>. Sharetribe
-                offers anyone a possibility to create a marketplace without restricting your own
-                creativity. Do not hesitate to reach out and learn how to best turn your
-                marketplace idea to reality.
+                Always stay in control, Brosse through a list of DJs or select your event type.
               </p>
               <p>
-                You can also checkout our{' '}
-                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink>.
+                Book 24/7, Get a glimpse of the big night by hearing Dj mixes and reading real client reviews.
               </p>
+              <p>
+                Choices of top rated DJ's, it takes 60 seconds to make a request. Quick, simple and effective.
+              </p>
+              <div className={css.subtitle}>
+              <h2>•	Free cancellation  </h2>
+              <h4>Cancel for free for up to [2] days before your event</h4>
+              <h2>•	Secure today with a 10% (confirm value) deposit</h2>
+              <h4>Choose to spread the payment by paying a deposit today and the remainder up to [3] days prior to the event</h4>
+              <h2>•	Trusted DJ's</h2>
+              <h4>Every DJ on this website is subject to has been vetted to uphold quality and safety (see more) </h4>
+              <h4> Money-back guarantee </h4>
+              <h4>	We hold your booking fee which the DJs do not receive until the event is confirmed finished.</h4>
+              </div>
             </div>
+         
           </div>
         </LayoutWrapperMain>
 
