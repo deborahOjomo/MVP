@@ -50,7 +50,11 @@
   "BookingBreakdown.baseUnitQuantity": "{unitPrice} * {quantity, number} {quantity, plural, one {hour} other {hours}}",
   "BookingBreakdown.bookingEnd": "Booking end",
   "BookingBreakdown.bookingStart": "Booking start",
+<<<<<<< HEAD
   "BookingBreakdown.commission": "",
+=======
+  "BookingBreakdown.commission": "Service fee *",
+>>>>>>> eb498ec120d16ad4b695dc232eb1e333cac58508
   "BookingBreakdown.commissionFeeNote": "* The fee helps us run the platform and provide the best possible service to you!",
   "BookingBreakdown.dayCount": "{count, number} {count, plural, one {day} other {days}}",
   "BookingBreakdown.nightCount": "{count, number} {count, plural, one {night} other {nights}}",
@@ -64,8 +68,8 @@
   "BookingBreakdown.quantity": "{quantity, number} {quantity, plural, one {hour} other {hours}}",
   "BookingBreakdown.quantityUnit": "Number of hours",
   "BookingBreakdown.refund": "Refund",
-  "BookingBreakdown.refundCustomerFee": "Refund TalentBookr fee",
-  "BookingBreakdown.refundProviderFee": "Refund TalentBookr fee",
+  "BookingBreakdown.refundCustomerFee": "Refund Service fee",
+  "BookingBreakdown.refundProviderFee": "Refund Service fee",
   "BookingBreakdown.subTotal": "Subtotal",
   "BookingBreakdown.total": "Total price",
   "BookingDatesForm.bookingEndTitle": "End date",
@@ -392,12 +396,17 @@
   "ImageCarousel.imageAltText": "Listing image {index}/{count}",
   "ImageFromFile.couldNotReadFile": "Could not read file",
   "InboxPage.fetchFailed": "Could not load all messages. Please try again.",
-  "InboxPage.noOrdersFound": "You haven't made any bookings.",
+  "InboxPage.noOrdersFound": "You haven't got any bookings.",
   "InboxPage.noSalesFound": "Nobody has booked anything from you yet.",
   "InboxPage.ordersTabTitle": "Bookings",
   "InboxPage.ordersTitle": "Inbox: Bookings",
+<<<<<<< HEAD
   "InboxPage.salesTabTitle": "Reservations",
   "InboxPage.salesTitle": "Inbox: Reservations",
+=======
+  "InboxPage.salesTabTitle": "Requests",
+  "InboxPage.salesTitle": "Inbox: Requests",
+>>>>>>> eb498ec120d16ad4b695dc232eb1e333cac58508
   "InboxPage.stateAccepted": "Accepted",
   "InboxPage.stateCanceled": "Canceled",
   "InboxPage.stateDeclined": "Declined",
