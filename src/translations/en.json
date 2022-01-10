@@ -50,12 +50,9 @@
   "BookingBreakdown.baseUnitQuantity": "{unitPrice} * {quantity, number} {quantity, plural, one {hour} other {hours}}",
   "BookingBreakdown.bookingEnd": "Booking end",
   "BookingBreakdown.bookingStart": "Booking start",
-<<<<<<< HEAD
   "BookingBreakdown.commission": "",
-=======
-  "BookingBreakdown.commission": "Service fee *",
->>>>>>> eb498ec120d16ad4b695dc232eb1e333cac58508
-  "BookingBreakdown.commissionFeeNote": "* The fee helps us run the platform and provide the best possible service to you!",
+
+  "BookingBreakdown.commissionFeeNote": "",
   "BookingBreakdown.dayCount": "{count, number} {count, plural, one {day} other {days}}",
   "BookingBreakdown.nightCount": "{count, number} {count, plural, one {night} other {nights}}",
   "BookingBreakdown.pricePerDay": "Price per day",
@@ -400,13 +397,8 @@
   "InboxPage.noSalesFound": "Nobody has booked anything from you yet.",
   "InboxPage.ordersTabTitle": "Bookings",
   "InboxPage.ordersTitle": "Inbox: Bookings",
-<<<<<<< HEAD
-  "InboxPage.salesTabTitle": "Reservations",
-  "InboxPage.salesTitle": "Inbox: Reservations",
-=======
   "InboxPage.salesTabTitle": "Requests",
   "InboxPage.salesTitle": "Inbox: Requests",
->>>>>>> eb498ec120d16ad4b695dc232eb1e333cac58508
   "InboxPage.stateAccepted": "Accepted",
   "InboxPage.stateCanceled": "Canceled",
   "InboxPage.stateDeclined": "Declined",
@@ -963,9 +955,9 @@
   "StripePaymentForm.genericError": "Could not handle payment data. Please try again.",
   "StripePaymentForm.confirmCardPaymentError": "We are unable to authenticate your payment method. Please check your authentication details and try again.",
   "StripePaymentForm.messageHeading": "Message",
-  "StripePaymentForm.messageLabel": "Say hello to your DJ {messageOptionalText}",
+  "StripePaymentForm.messageLabel": "Venue Location",
   "StripePaymentForm.messageOptionalText": "• optional",
-  "StripePaymentForm.messagePlaceholder": "Hello {name}! I'm looking forward to…",
+  "StripePaymentForm.messagePlaceholder": "Let {listingTitle} know the location of the Venue ",
   "StripePaymentForm.missingStripeKey": "Stripe publishable key has not been configured to this marketplace. Unfortunately, booking the listing is not possible.",
   "StripePaymentForm.paymentCardDetails": "Payment card details",
   "StripePaymentForm.paymentHeading": "Payment",
