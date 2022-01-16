@@ -52,7 +52,7 @@
   "BookingBreakdown.bookingStart": "Booking start",
   "BookingBreakdown.commission": "",
 
-  "BookingBreakdown.commissionFeeNote": "",
+  "BookingBreakdown.commissionFeeNote": "Serivce fee",
   "BookingBreakdown.dayCount": "{count, number} {count, plural, one {day} other {days}}",
   "BookingBreakdown.nightCount": "{count, number} {count, plural, one {night} other {nights}}",
   "BookingBreakdown.pricePerDay": "Price per day",
