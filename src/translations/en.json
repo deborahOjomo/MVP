@@ -50,7 +50,7 @@
   "BookingBreakdown.baseUnitQuantity": "{unitPrice} * {quantity, number} {quantity, plural, one {hour} other {hours}}",
   "BookingBreakdown.bookingEnd": "Booking end",
   "BookingBreakdown.bookingStart": "Booking start",
-  "BookingBreakdown.commission": "",
+  "BookingBreakdown.commission": "Service fee",
 
   "BookingBreakdown.commissionFeeNote": "Serivce fee",
   "BookingBreakdown.dayCount": "{count, number} {count, plural, one {day} other {days}}",
