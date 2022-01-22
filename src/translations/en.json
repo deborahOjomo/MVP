@@ -1129,7 +1129,7 @@
   "TransactionPanel.saleRequestedTitle": "{customerName} has requested to book a DJ set with you.",
   "TransactionPanel.savePaymentMethodFailed": "Saving default payment method failed. Go to {paymentMethodsPageLink} to try again.",
   "TransactionPanel.sendingMessageNotAllowed": "This user has been removed. Sending message to the user is not possible anymore.",
-  "TransactionPanel.sendMessagePlaceholder": "Send a message to {listingLink}…",
+  "TransactionPanel.sendMessagePlaceholder": "Send a message to the DJ …",
   "UserCard.contactUser": "Contact",
   "UserCard.heading": "Hello, I'm {name}.",
   "UserCard.showFullBioLink": "more",
