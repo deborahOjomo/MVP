@@ -99,11 +99,11 @@ const Footer = props => {
                     <FormattedMessage id="Footer.toHelpPage" /> removed help page button
                   </NamedLink>
                 </li> */}
-                <li className={css.listItem}>
+                {/* <li className={css.listItem}>
                   <NamedLink name="AboutPage" to={{ hash: '#contact' }} className={css.link}>
                     <FormattedMessage id="Footer.toContactPage" />
                   </NamedLink>
-                </li>
+                </li> */}
                 <li className={css.listItem}>
                   <NamedLink name="NewListingPage" className={css.link}>
                     <FormattedMessage id="Footer.toDJPage" />
@@ -117,7 +117,7 @@ const Footer = props => {
                   <a href="tel:+08000502333">0800 050 2333</a>
                 </li>
                 <li className={css.listItem}>
-                  <a href="mailto:admin@talentbookr.co.uk"> admin@talentbookr.co.uk</a>
+                  <a href="mailto:admin@talentbookr.co.uk"> contact us</a>
                 </li>
               </ul>
             </div>
