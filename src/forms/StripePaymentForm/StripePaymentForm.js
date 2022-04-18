@@ -11,6 +11,9 @@ import config from '../../config';
 import { FormattedMessage, injectIntl, intlShape } from '../../util/reactIntl';
 import { propTypes } from '../../util/types';
 import { ensurePaymentMethodCard } from '../../util/data';
+import { FieldCheckboxGroup } from '../../components';
+import arrayMutators from 'final-form-arrays';
+import { requiredFieldArrayCheckbox } from '../../util/validators';
 
 import {
   Form,
@@ -345,6 +348,39 @@ class StripePaymentForm extends Component {
       [css.cardError]: hasCardError,
     });
 
+    const label = (
+      <label>
+        Please tick to confirm that you have read and understood our &nbsp;
+        <a
+          href="/terms-of-service"
+          target="popup"
+          onclick="window.open('http://www.google.com','popup','width=200,height=200'); return false;"
+        >
+          terms of service &nbsp;
+        </a>{' '}
+        and &nbsp;
+        <a
+          href="/privacy-policy"
+          target="popup"
+          onclick="window.open('http://www.bing.com','popup','width=200,height=200'); return false;"
+        >
+          privacy policy
+        </a>
+      </label>
+    );
+
+    const tosProps = {
+      name: 'terms-of-service',
+      id: 'tos-accepted',
+      options: [
+        {
+          key: 'tos',
+          label: label,
+        },
+      ],
+      validate: requiredFieldArrayCheckbox('You need to accept Terms of service'),
+    };
+
     // TODO: confirmCardPayment can create all kinds of errors.
     // Currently, we provide translation support for one:
     // https://stripe.com/docs/error-codes
@@ -477,6 +513,9 @@ class StripePaymentForm extends Component {
             <span className={css.errorMessage}>{paymentErrorMessage}</span>
           ) : null}
           <p className={css.paymentInfo}>{paymentInfo}</p>
+
+          <FieldCheckboxGroup {...tosProps} />
+
           <PrimaryButton
             className={css.submitButton}
             type="submit"
@@ -500,7 +539,14 @@ class StripePaymentForm extends Component {
 
   render() {
     const { onSubmit, ...rest } = this.props;
-    return <FinalForm onSubmit={this.handleSubmit} {...rest} render={this.paymentForm} />;
+    return (
+      <FinalForm
+        onSubmit={this.handleSubmit}
+        {...rest}
+        render={this.paymentForm}
+        mutators={{ ...arrayMutators }}
+      />
+    );
   }
 }
 

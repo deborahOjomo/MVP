@@ -97,7 +97,7 @@ const TopbarDesktop = props => {
             </div>
           </OwnListingLink>
         </MenuItem>
-        <MenuItem key="EditListingPage">
+        <MenuItem key="EditListingPageWHYHERE?">
           <ListingLink
             className={css.yourListingsLink}
             listing={currentUserListing}
