@@ -180,6 +180,7 @@
   "DateInput.defaultPlaceholder": "Date input",
   "DateInput.screenReaderInputMessage": "Date input",
   "EditListingAmenitiesPanel.createListingTitle": "Select amenities included in your price",
+  "EditListingAmenitiesPanel.title": "Select amenities included in your price",
   "EditListingWizard.tabLabelAmenities": "Amenities",
   "EditListingAvailabilityExceptionForm.available": "Available",
   "EditListingAvailabilityExceptionForm.addException": "Save exception",

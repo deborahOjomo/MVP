@@ -42,7 +42,7 @@ const SectionLocations = props => {
   const { rootClassName, className } = props;
 
   const classes = classNames(rootClassName || css.root, className);
-
+  console.log(classes);
   return (
     <div className={classes}>
       <div className={css.title}>

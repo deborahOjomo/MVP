@@ -152,7 +152,7 @@ export class ModalComponent extends Component {
       <div className={classes}>
         <div className={scrollLayerClasses}>
           <div className={containerClasses}>
-            {closeBtn}
+            {/* {closeBtn}  force an email verify */}
             <div className={classNames(contentClassName || css.content)}>{children}</div>
           </div>
         </div>
@@ -166,7 +166,7 @@ export class ModalComponent extends Component {
               ref={this.refDiv}
               tabIndex="-1"
             >
-              {closeBtn}
+              {/* {closeBtn}  force an email verify */}
               <div className={classNames(contentClassName || css.content)}>{children}</div>
             </div>
           </div>

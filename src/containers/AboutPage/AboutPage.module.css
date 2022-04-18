@@ -56,3 +56,67 @@
   margin-top: 32px;
   margin-bottom: 16px;
 }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+  }
+}
+
+.step {
+  @media (--viewportMedium) {
+    width: 50%;
+  }
+}
+
+.icon {
+  margin-top: 60px;
+  width: 90px;
+  height: 100px;
+}
+
+.stepTitle:before {
+  content: '✓';
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+    margin-top: 33px;
+  }
+}
+
+.location {
+  width: 100%;
+  margin-top: 25px;
+
+  /* Remove link's hover effect */
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (--viewportMedium) {
+    margin-top: 0;
+  }
+}
+
+.location {
+  @media (--viewportMedium) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  @apply --marketplaceH1FontStyles;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}

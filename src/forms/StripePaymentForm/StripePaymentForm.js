@@ -356,7 +356,7 @@ class StripePaymentForm extends Component {
           target="popup"
           onclick="window.open('http://www.google.com','popup','width=200,height=200'); return false;"
         >
-          terms of service &nbsp;
+          Terms of Service &nbsp;
         </a>{' '}
         and &nbsp;
         <a
@@ -364,7 +364,7 @@ class StripePaymentForm extends Component {
           target="popup"
           onclick="window.open('http://www.bing.com','popup','width=200,height=200'); return false;"
         >
-          privacy policy
+          Privacy Policy
         </a>
       </label>
     );
