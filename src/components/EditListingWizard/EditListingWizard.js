@@ -27,6 +27,7 @@ import EditListingWizardTab, {
   LOCATION,
   PRICING,
   PHOTOS,
+  AMENITIES,
 } from './EditListingWizardTab';
 import css from './EditListingWizard.module.css';
 
@@ -46,6 +47,7 @@ export const TABS = [
   //POLICY,
   LOCATION,
   PRICING,
+  AMENITIES,
   ...availabilityMaybe,
   PHOTOS,
 ];
@@ -74,6 +76,8 @@ const tabLabel = (intl, tab) => {
     key = 'EditListingWizard.tabLabelAvailability';
   } else if (tab === PHOTOS) {
     key = 'EditListingWizard.tabLabelPhotos';
+  } else if (tab === AMENITIES) {
+    key = 'EditListingWizard.tabLabelAmenities';
   }
 
   return intl.formatMessage({ id: key });
@@ -105,6 +109,8 @@ const tabCompleted = (tab, listing) => {
       return !!(publicData && publicData.musicGenres);
     case EVENT:
       return !!(publicData && publicData.event);
+    case AMENITIES:
+      return !!(publicData && publicData.amenities);
     case POLICY:
       return !!(publicData && typeof publicData.rules !== 'undefined');
     case LOCATION:

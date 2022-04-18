@@ -11,6 +11,7 @@ import {
 import { ensureListing } from '../../util/data';
 import { createResourceLocatorString } from '../../util/routes';
 import {
+  EditListingAmenitiesPanel,
   EditListingAvailabilityPanel,
   EditListingDescriptionPanel,
   EditListingEventPanel,
@@ -31,6 +32,7 @@ export const POLICY = 'policy';
 export const LOCATION = 'location';
 export const PRICING = 'pricing';
 export const PHOTOS = 'photos';
+export const AMENITIES = 'amenities';
 
 // EditListingWizardTab component supports these tabs
 export const SUPPORTED_TABS = [
@@ -42,6 +44,7 @@ export const SUPPORTED_TABS = [
   PRICING,
   AVAILABILITY,
   PHOTOS,
+  AMENITIES,
 ];
 
 const pathParamsToNextTab = (params, tab, marketplaceTabs) => {
@@ -247,6 +250,20 @@ const EditListingWizardTab = props => {
       return (
         <EditListingPricingPanel
           {...panelProps(PRICING)}
+          submitButtonText={intl.formatMessage({ id: submitButtonTranslationKey })}
+          onSubmit={values => {
+            onCompleteEditListingWizardTab(tab, values);
+          }}
+        />
+      );
+    }
+    case AMENITIES: {
+      const submitButtonTranslationKey = isNewListingFlow
+        ? 'EditListingWizard.saveNewAmenities'
+        : 'EditListingWizard.saveEditAmenities';
+      return (
+        <EditListingAmenitiesPanel
+          {...panelProps(AMENITIES)}
           submitButtonText={intl.formatMessage({ id: submitButtonTranslationKey })}
           onSubmit={values => {
             onCompleteEditListingWizardTab(tab, values);
