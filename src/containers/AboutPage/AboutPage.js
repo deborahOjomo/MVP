@@ -13,6 +13,10 @@ import {
 
 import css from './AboutPage.module.css';
 import image from './about-us-1056.jpg';
+import coupleImage from './couple.jpg';
+import danceImage from './dance.jpg';
+import djImage from './dj.jpg';
+import hbdImage from './hbd.jpg';
 import trustImage from '../../components/SectionLocations/images/ICON_TRUST.png';
 import djChoice from '../../components/SectionLocations/images/ICON_DJCHOICE.png';
 import hoursImage from '../../components/SectionLocations/images/ICON_247.png';
@@ -42,7 +46,16 @@ const AboutPage = () => {
           <h1 className={css.pageTitle}>
             We are helping people enhance their most beautiful memories{' '}
           </h1>
-          <img className={css.coverImage} src={image} alt="My first ice cream." />
+          <div className={css.row}>
+            <img className={css.coverImage} src={coupleImage} width="387px" height="551px" />
+
+            <div className={css.column}>
+              <img className={css.coverImage} src={djImage} width="387px" height="177px" />
+              <img className={css.coverImage} src={danceImage} width="387px" height="177px" />
+              <img className={css.coverImage} src={image} width="387px" height="177px" />
+            </div>
+            <img className={css.coverImage} src={hbdImage} width="387px" height="551px" />
+          </div>
 
           <div className={css.pageTitle}>
             <h1> The trusted way to book a DJ </h1>
@@ -84,7 +97,7 @@ const AboutPage = () => {
 
             <div className={css.pageTitle}>
               <h1> Our Story </h1>
-              <h2>
+              <p>
                 The idea for talentbookr came from our founders’ experience as event promoters. We
                 were fortunate enough to holding over 20 events hosted in the South Coast between
                 2013 - 2016 featuring UK’s top upcoming DJs and artists. During this time, we
@@ -92,11 +105,13 @@ const AboutPage = () => {
                 stressful to organise successful events. After we realised that we are not the only
                 ones with such issues, the “eureka” moment happened. Our experience leads us here
                 today to remove any entertainment worries and help you enhance a beautiful memory.
-              </h2>
+              </p>
 
               <h1> Our values </h1>
 
-              <p>Always stay in control, Brosse through a list of DJs or select your event type.</p>
+              <p>
+                Always stay in control, browse through a list of DJs or select your event type.
+              </p>
               <p>
                 Book 24/7, Get a glimpse of the big night by hearing Dj mixes and reading real
                 client reviews.
@@ -109,16 +124,16 @@ const AboutPage = () => {
                 <h2>• Free cancellation </h2>
                 <h4>Cancel for free for up to [2] days before your event</h4>
                 <h2>• Secure today with a 10% (confirm value) deposit</h2>
-                <h4>
+                <p>
                   Choose to spread the payment by paying a deposit today and the remainder up to [3]
                   days prior to the event
-                </h4>
+                </p>
                 <h2>• Trusted DJ's</h2>
-                <h4>
+                <p>
                   Every DJ on this website is subject to has been vetted to uphold quality and
                   safety (see more){' '}
-                </h4>
-                <h4> Money-back guarantee </h4>
+                </p>
+                <p>• Money-back guarantee </p>
                 <h4>
                   {' '}
                   We hold your booking fee which the DJs do not receive until the event is confirmed
