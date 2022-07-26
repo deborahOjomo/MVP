@@ -367,6 +367,7 @@ export const InboxPageComponent = props => {
     //    params: { tab: 'orders' },
     //  },
     // },
+    // old booking section has been removed and request section in booking section has been changed to the booking section , easier to deal with
 
     {
       text: (
