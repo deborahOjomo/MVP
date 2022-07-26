@@ -355,18 +355,19 @@ export const InboxPageComponent = props => {
     providerNotificationCount > 0 ? <NotificationBadge count={providerNotificationCount} /> : null;
 
   const tabs = [
-    {
-      text: (
-        <span>
-          <FormattedMessage id="InboxPage.ordersTabTitle" />
-        </span>
-      ),
-      selected: isOrders,
-      linkProps: {
-        name: 'InboxPage',
-        params: { tab: 'orders' },
-      },
-    },
+    //{
+    //  text: (
+    //    <span>
+    //      <FormattedMessage id="InboxPage.ordersTabTitle" />
+    //    </span>
+    //  ),
+    //  selected: isOrders,
+    //  linkProps: {
+    //    name: 'InboxPage',
+    //    params: { tab: 'orders' },
+    //  },
+    // },
+
     {
       text: (
         <span>
@@ -471,9 +472,6 @@ const mapStateToProps = state => {
   };
 };
 
-const InboxPage = compose(
-  connect(mapStateToProps),
-  injectIntl
-)(InboxPageComponent);
+const InboxPage = compose(connect(mapStateToProps), injectIntl)(InboxPageComponent);
 
 export default InboxPage;
